@@ -34,6 +34,9 @@ const routes: Routes = [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },
+
+  // No Layout views
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
 ];
 
 @NgModule({
