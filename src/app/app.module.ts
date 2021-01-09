@@ -12,6 +12,10 @@ import { SidebarComponent } from './components/sidebars/sidebar/sidebar.componen
 import { DashboardNavbarComponent } from './components/navbars/dashboard-navbar/dashboard-navbar.component';
 import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
+import { CardLineChartComponent } from './components/cards/card-line-chart/card-line-chart.component';
+import { CardBarChartComponent } from './components/cards/card-bar-chart/card-bar-chart.component';
+import { CardPageVisitsComponent } from './components/cards/card-page-visits/card-page-visits.component';
+import { UserDropdownComponent } from './components/dropdowns/user-dropdown/user-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,10 @@ import { CardStatsComponent } from './components/cards/card-stats/card-stats.com
     DashboardNavbarComponent,
     HeaderStatsComponent,
     CardStatsComponent,
+    CardLineChartComponent,
+    CardBarChartComponent,
+    CardPageVisitsComponent,
+    UserDropdownComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
