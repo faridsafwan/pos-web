@@ -8,6 +8,10 @@ import { AuthComponent } from './layouts/auth/auth.component';
 import { HomeComponent } from './views/dashboard/home/home.component';
 import { LoginComponent } from './views/auth/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SidebarComponent } from './components/sidebars/sidebar/sidebar.component';
+import { DashboardNavbarComponent } from './components/navbars/dashboard-navbar/dashboard-navbar.component';
+import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
+import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AuthComponent,
     HomeComponent,
     LoginComponent,
+    SidebarComponent,
+    DashboardNavbarComponent,
+    HeaderStatsComponent,
+    CardStatsComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
