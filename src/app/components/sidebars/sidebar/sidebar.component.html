@@ -82,12 +82,12 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none">
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/home']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardHome="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardHome.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -95,7 +95,7 @@
             <i
               class="fas fa-tv mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardHome.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Dashboard
@@ -104,12 +104,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/items']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardItems="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardItems.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -117,7 +117,7 @@
             <i
               class="fas fa-cube mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardItems.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Items
@@ -126,12 +126,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/reports']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardReports="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardReports.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -139,7 +139,7 @@
             <i
               class="far fa-clipboard mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardReports.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Reports
@@ -148,12 +148,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/sales']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardSales="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardSales.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -161,7 +161,7 @@
             <i
               class="fas fa-chart-line mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardSales.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Sales
@@ -170,12 +170,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/expenses']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardExpenses="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardExpenses.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -183,7 +183,7 @@
             <i
               class="fas fa-dollar-sign mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardExpenses.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Expenses
@@ -192,12 +192,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/customers']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardCustomers="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardCustomers.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -205,21 +205,21 @@
             <i
               class="fas fa-user mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardCustomers.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
-            Customer
+            Customers
           </a>
         </li>
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/suppliers']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardSuppliers="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardSuppliers.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -227,21 +227,21 @@
             <i
               class="fas fa-industry mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardSuppliers.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
-            Supplier
+            Suppliers
           </a>
         </li>
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/employees']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardEmployees="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardEmployees.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -249,7 +249,7 @@
             <i
               class="fas fa-user-friends mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardEmployees.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Employee
@@ -258,12 +258,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/dashboard']"
+            [routerLink]="['/dashboard/locations']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminDashboard="routerLinkActive"
+            #dashboardLocations="routerLinkActive"
             [ngClass]="
-              adminDashboard.isActive
+              dashboardLocations.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -271,7 +271,7 @@
             <i
               class="fas fa-store-alt mr-2 text-sm"
               [ngClass]="
-                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardLocations.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Store Location
@@ -280,12 +280,12 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/settings']"
+            [routerLink]="['/dashboard/settings']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminSettings="routerLinkActive"
+            #dashboardSettings="routerLinkActive"
             [ngClass]="
-              adminSettings.isActive
+              dashboardSettings.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
@@ -293,7 +293,7 @@
             <i
               class="fas fa-cog mr-2 text-sm"
               [ngClass]="
-                adminSettings.isActive ? 'opacity-75' : 'text-gray-400'
+                dashboardSettings.isActive ? 'opacity-75' : 'text-gray-400'
               "
             ></i>
             Settings
@@ -302,19 +302,19 @@
 
         <!-- <li class="items-center">
           <a
-            [routerLink]="['/admin/tables']"
+            [routerLink]="['/dashboard/tables']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminTables="routerLinkActive"
+            #dashboardTables="routerLinkActive"
             [ngClass]="
-              adminTables.isActive
+              dashboardTables.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-table mr-2 text-sm"
-              [ngClass]="adminTables.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="dashboardTables.isActive ? 'opacity-75' : 'text-gray-400'"
             ></i>
             Tables
           </a>
@@ -322,19 +322,19 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/maps']"
+            [routerLink]="['/dashboard/maps']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminMaps="routerLinkActive"
+            #dashboardMaps="routerLinkActive"
             [ngClass]="
-              adminMaps.isActive
+              dashboardMaps.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-map-marked mr-2 text-sm"
-              [ngClass]="adminMaps.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="dashboardMaps.isActive ? 'opacity-75' : 'text-gray-400'"
             ></i>
             Maps
           </a>

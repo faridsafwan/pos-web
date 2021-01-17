@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // apiUrl: 'https://aziqazhar.store',
+  mapbox: {
+    accessToken:
+      'pk.eyJ1IjoiaW50dWl0aXZlYmFkZ2VyIiwiYSI6ImNrOXZpeXZiNzBkN3Iza29saHhjOWo2OGwifQ.QOMbmOzi8OhYw6NYyDqBRQ',
+  },
 };
 
 /*
