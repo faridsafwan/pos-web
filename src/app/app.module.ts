@@ -17,7 +17,7 @@ import { CardBarChartComponent } from './components/cards/card-bar-chart/card-ba
 import { CardPageVisitsComponent } from './components/cards/card-page-visits/card-page-visits.component';
 import { UserDropdownComponent } from './components/dropdowns/user-dropdown/user-dropdown.component';
 import { MapMainComponent } from './components/maps/map-main/map-main.component';
-import { ItemsViewComponent } from './views/dashboard/items/items-view.component';
+import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
 import { HeaderMainComponent } from './components/headers/header-main/header-main.component';
 
 @NgModule({
@@ -36,7 +36,7 @@ import { HeaderMainComponent } from './components/headers/header-main/header-mai
     CardPageVisitsComponent,
     UserDropdownComponent,
     MapMainComponent,
-    ItemsViewComponent,
+    ItemViewComponent,
     HeaderMainComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],

@@ -7,7 +7,7 @@ import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 
 import { LoginComponent } from './views/auth/login/login.component';
 import { HomeComponent } from './views/dashboard/home/home.component';
-import { ItemsViewComponent } from './views/dashboard/items/items-view.component';
+import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
 
 const routes: Routes = [
   // Dashboard views
@@ -21,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: 'items',
-        component: ItemsViewComponent,
+        component: ItemViewComponent,
       },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ],
