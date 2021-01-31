@@ -19,6 +19,7 @@ import { UserDropdownComponent } from './components/dropdowns/user-dropdown/user
 import { MapMainComponent } from './components/maps/map-main/map-main.component';
 import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
 import { HeaderMainComponent } from './components/headers/header-main/header-main.component';
+import { ItemCreateComponent } from './views/dashboard/items/item-create/item-create.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { HeaderMainComponent } from './components/headers/header-main/header-mai
     MapMainComponent,
     ItemViewComponent,
     HeaderMainComponent,
+    ItemCreateComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],

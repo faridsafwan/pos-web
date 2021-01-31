@@ -7,6 +7,7 @@ import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 
 import { LoginComponent } from './views/auth/login/login.component';
 import { HomeComponent } from './views/dashboard/home/home.component';
+import { ItemCreateComponent } from './views/dashboard/items/item-create/item-create.component';
 import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
 
 const routes: Routes = [
@@ -21,7 +22,17 @@ const routes: Routes = [
       },
       {
         path: 'items',
-        component: ItemViewComponent,
+        children: [
+          {
+            path: 'view',
+            component: ItemViewComponent,
+          },
+          {
+            path: 'create',
+            component: ItemCreateComponent,
+          },
+          { path: '', redirectTo: 'view', pathMatch: 'full' },
+        ],
       },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ],
