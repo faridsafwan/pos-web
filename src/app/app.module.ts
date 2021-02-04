@@ -20,6 +20,14 @@ import { MapMainComponent } from './components/maps/map-main/map-main.component'
 import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
 import { HeaderMainComponent } from './components/headers/header-main/header-main.component';
 import { ItemCreateComponent } from './views/dashboard/items/item-create/item-create.component';
+import { CustomerCreateComponent } from './views/dashboard/customers/customer-create/customer-create.component';
+import { CustomerViewComponent } from './views/dashboard/customers/customer-view/customer-view.component';
+import { SupplierViewComponent } from './views/dashboard/suppliers/supplier-view/supplier-view.component';
+import { SupplierCreateComponent } from './views/dashboard/suppliers/supplier-create/supplier-create.component';
+import { EmployeeCreateComponent } from './views/dashboard/employers/employee-create/employee-create.component';
+import { EmployeeViewComponent } from './views/dashboard/employers/employee-view/employee-view.component';
+import { StoreViewComponent } from './views/dashboard/stores/store-view/store-view.component';
+import { StoreCreateComponent } from './views/dashboard/stores/store-create/store-create.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +48,14 @@ import { ItemCreateComponent } from './views/dashboard/items/item-create/item-cr
     ItemViewComponent,
     HeaderMainComponent,
     ItemCreateComponent,
+    CustomerCreateComponent,
+    CustomerViewComponent,
+    SupplierViewComponent,
+    SupplierCreateComponent,
+    EmployeeCreateComponent,
+    EmployeeViewComponent,
+    StoreViewComponent,
+    StoreCreateComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],

@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderMainComponent implements OnInit {
   @Input() isUse = true;
+  @Input() componentName;
 
   constructor() {}
 
