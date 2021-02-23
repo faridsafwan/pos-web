@@ -28,6 +28,12 @@ import { EmployeeCreateComponent } from './views/dashboard/employers/employee-cr
 import { EmployeeViewComponent } from './views/dashboard/employers/employee-view/employee-view.component';
 import { StoreViewComponent } from './views/dashboard/stores/store-view/store-view.component';
 import { StoreCreateComponent } from './views/dashboard/stores/store-create/store-create.component';
+import { SalesComponent } from './views/dashboard/sales/sales.component';
+import { ReceivingsComponent } from './views/dashboard/receivings/receivings.component';
+import { CardItemComponent } from './components/cards/card-item/card-item.component';
+import { CardRegisterComponent } from './components/cards/card-register/card-register.component';
+import { CardActionItemComponent } from './components/cards/card-action-item/card-action-item.component';
+import { CardSummaryItemComponent } from './components/cards/card-summary-item/card-summary-item.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +62,12 @@ import { StoreCreateComponent } from './views/dashboard/stores/store-create/stor
     EmployeeViewComponent,
     StoreViewComponent,
     StoreCreateComponent,
+    SalesComponent,
+    ReceivingsComponent,
+    CardItemComponent,
+    CardRegisterComponent,
+    CardActionItemComponent,
+    CardSummaryItemComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],

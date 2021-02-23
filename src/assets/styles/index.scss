@@ -2,22 +2,26 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.btn-submit {
-  @apply bg-gray-900 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150;
+.btn-primary {
+  @apply h-11 px-3 py-1 bg-indigo-500 hover:bg-indigo-600 text-white  text-xs font-bold uppercase rounded outline-none focus:outline-none ease-linear transition-all duration-150;
 }
 
-.btn-submit:hover {
-  @apply bg-gray-600 text-white;
+.btn-secondary {
+  @apply h-11 px-3 py-1 bg-gray-900 hover:bg-gray-600 text-white  text-xs font-bold uppercase rounded outline-none focus:outline-none ease-linear transition-all duration-150;
 }
 
-.btn-action {
-  @apply bg-indigo-500 text-white text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none ease-linear transition-all duration-150;
+.btn-danger {
+  @apply h-11 px-3 py-1 bg-red-700 hover:bg-red-500 text-white  text-xs font-bold uppercase rounded outline-none focus:outline-none ease-linear transition-all duration-150;
 }
 
-.btn-action:hover {
-  @apply bg-indigo-600 text-white;
+.btn-warning {
+  @apply h-11 px-3 py-1 bg-yellow-500 hover:bg-yellow-700 text-white  text-xs font-bold uppercase rounded outline-none focus:outline-none ease-linear transition-all duration-150;
 }
 
 .card {
   @apply break-words bg-white rounded mb-6 xl:mb-0 shadow-lg;
+}
+
+.input {
+  @apply placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow outline-none focus:outline-none;
 }

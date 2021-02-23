@@ -1,0 +1,50 @@
+<app-header-main [isUse]="false" componentName="Item"></app-header-main>
+
+<div class="px-4 md:px-10 -mt-24">
+  <div
+    [ngClass]="{
+      'flex transition-all ease-in duration-500': !isShow
+    }"
+  >
+    <div class="w-full mb-12 xl:mb-0 px-4" *ngIf="!isShow">
+      <span
+        class="relative text-white cursor-pointer"
+        (click)="backToCategories()"
+        >Categories
+      </span>
+      <span class="relative text-white" *ngIf="selectedCategory"
+        >> {{ selectedCategory }}</span
+      >
+      <div
+        class="relative flex flex-wrap min-w-0 break-words w-full mt-2 mb-6 bg-transparent"
+      >
+        <div
+          class="max-w-xs overflow-hidden rounded-lg shadow-lg bg-white mr-2 mb-2 hover:bg-blue-600 hover:text-white"
+          *ngFor="let item of currentItem"
+        >
+          <div class="px-6 py-4 h-40 w-40" (click)="selectItem(item)">
+            <!-- <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">
+              {{ category.test }}
+            </h4> -->
+            <p class="leading-normal">
+              {{ item.name }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-wrap mt-4">
+    <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+      <app-card-register (isShow)="showGrid($event)"></app-card-register>
+      <app-card-item
+        [cartItem]="cartItem"
+        (removedItem)="removeFromCart($event)"
+      ></app-card-item>
+    </div>
+    <div class="w-full xl:w-4/12 px-4">
+      <app-card-action-item></app-card-action-item>
+      <app-card-summary-item [total]="total"></app-card-summary-item>
+    </div>
+  </div>
+</div>

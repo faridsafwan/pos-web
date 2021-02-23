@@ -13,6 +13,7 @@ import { EmployeeViewComponent } from './views/dashboard/employers/employee-view
 import { HomeComponent } from './views/dashboard/home/home.component';
 import { ItemCreateComponent } from './views/dashboard/items/item-create/item-create.component';
 import { ItemViewComponent } from './views/dashboard/items/item-view/item-view.component';
+import { SalesComponent } from './views/dashboard/sales/sales.component';
 import { StoreCreateComponent } from './views/dashboard/stores/store-create/store-create.component';
 import { StoreViewComponent } from './views/dashboard/stores/store-view/store-view.component';
 import { SupplierCreateComponent } from './views/dashboard/suppliers/supplier-create/supplier-create.component';
@@ -30,6 +31,34 @@ const routes: Routes = [
       },
       {
         path: 'items',
+        children: [
+          {
+            path: 'view',
+            component: ItemViewComponent,
+          },
+          {
+            path: 'create',
+            component: ItemCreateComponent,
+          },
+          { path: '', redirectTo: 'view', pathMatch: 'full' },
+        ],
+      },
+      {
+        path: 'sales',
+        children: [
+          {
+            path: 'view',
+            component: SalesComponent,
+          },
+          {
+            path: 'create',
+            component: ItemCreateComponent,
+          },
+          { path: '', redirectTo: 'view', pathMatch: 'full' },
+        ],
+      },
+      {
+        path: 'receive',
         children: [
           {
             path: 'view',

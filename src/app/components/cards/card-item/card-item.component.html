@@ -1,0 +1,69 @@
+<div
+  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-white"
+>
+  <div class="block w-full overflow-x-auto rounded">
+    <table class="items-center w-full bg-transparent border-collapse">
+      <thead>
+        <tr>
+          <th
+            class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+          >
+            -
+          </th>
+          <th
+            class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+          >
+            Item name
+          </th>
+          <th
+            class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+          >
+            Price (RM)
+          </th>
+          <th
+            class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+          >
+            Quantity
+          </th>
+          <th
+            class="px-6 bg-gray-100 text-gray-600 align-middle border border-solid border-gray-200 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-no-wrap font-semibold text-left"
+          >
+            Total (RM)
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItem">
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xl whitespace-no-wrap p-4 text-left"
+          >
+            <i
+              class="fas fa-times-circle text-red-500 cursor-pointer"
+              (click)="removeItem(item)"
+            ></i>
+          </th>
+          <th
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left"
+          >
+            {{ item.name }}
+          </th>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
+          >
+            {{ item.price }}
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
+          >
+            {{ item.quantity }}
+          </td>
+          <td
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4"
+          >
+            {{ item.total }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
