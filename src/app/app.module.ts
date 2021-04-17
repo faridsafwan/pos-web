@@ -34,6 +34,7 @@ import { CardItemComponent } from './components/cards/card-item/card-item.compon
 import { CardRegisterComponent } from './components/cards/card-register/card-register.component';
 import { CardActionItemComponent } from './components/cards/card-action-item/card-action-item.component';
 import { CardSummaryItemComponent } from './components/cards/card-summary-item/card-summary-item.component';
+import { ReceiptsComponent } from './views/dashboard/sales/receipts/receipts.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { CardSummaryItemComponent } from './components/cards/card-summary-item/c
     CardRegisterComponent,
     CardActionItemComponent,
     CardSummaryItemComponent,
+    ReceiptsComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],
